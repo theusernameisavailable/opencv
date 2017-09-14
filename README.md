@@ -2,5 +2,6 @@
 
 [Link to Haar cascade](https://raw.githubusercontent.com/shantnu/Webcam-Face-Detect/master/haarcascade_frontalface_default.xml)
 
-Image with detected faces:
-![alt text](https://github.com/longbeardmen/opencv/blob/master/images/result.jpg "result")
+Detected faces(gray/rgb):
+![alt text](https://github.com/longbeardmen/opencv/blob/master/images/result.jpg "result gray")
+![alt text](https://github.com/longbeardmen/opencv/blob/master/images/result_rgb.jpg "result rgb")

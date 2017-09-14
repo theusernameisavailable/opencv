@@ -12,18 +12,16 @@ rval, frame = vc.read()
 
 while True:
     if frame is not None:
-        #convert frame to gray grades
-        gray = cv2.cvtColor(frame,cv2.COLOR_BGR2GRAY)
         #detect faces in frame
-        faces = face_cascade.detectMultiScale(gray, 1.1, 5)
+        faces = face_cascade.detectMultiScale(frame, 1.1, 5)
         print "Found "+str(len(faces))+" face(s)"
 
         #add borders of faces in frame
         for (x,y,w,h) in faces:
-            cv2.rectangle(gray, (x,y),(x+w,y+h),(255,255,0),2)
+            cv2.rectangle(frame, (x,y),(x+w,y+h),(0,0,255),2)
 
         #show frame after detection
-        cv2.imshow('preview',gray)
+        cv2.imshow('preview',frame)
 
     #repeat reading frames
     rval, frame = vc.read()
